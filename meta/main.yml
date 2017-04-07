@@ -9,3 +9,7 @@ galaxy_info:
   galaxy_tags:
     - time
     - timezone
+
+  platforms:
+    - EL:
+        - 7

@@ -11,5 +11,6 @@ galaxy_info:
     - timezone
 
   platforms:
-    - EL:
+    - name: EL
+      versions:
         - 7

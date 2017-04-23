@@ -1,3 +1,9 @@
 ---
+# http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html
+# https://chrisjean.com/change-timezone-in-centos/
 - name: set timezone
-  command: timedatectl set-timezone {{ timezone }}
+  file:
+    force: yes
+    path: /etc/localtime
+    src: /usr/share/zoneinfo/{{ timezone }}
+    state: link
